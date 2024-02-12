@@ -5,7 +5,9 @@ function Home() {
   const ws = useRef(null)
 
   useEffect(() => {
-    ws.current = new WebSocket('ws://localhost:3000')
+    // ws.current = new WebSocket('ws://localhost:3000')
+    // ws.current = new WebSocket('ws://192.168.178.50:3000')
+    ws.current = new WebSocket(process.env.NEXT_PUBLIC_WS_URL)
     ws.current.onopen = () => {
       console.log('Connected to server')
     }
