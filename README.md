@@ -23,7 +23,7 @@ Open the terminal and cd to where you have unzipped the project. Run the followi
 
 Create a file in the **root** directory of your project called _.env.local_.
 
-In this file, add the following:
+In this file, add the following, replacing ${LOCAL_NETWORK_IP} for the value found in your network settings:
 
     NEXT_PUBLIC_WS_URL=ws://${LOCAL_NETWORK_IP}:3001
 
