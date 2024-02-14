@@ -19,7 +19,7 @@ Open the terminal and cd to where you have unzipped the project. Run the followi
 
     npm install
 
-## Create the .env file
+## Create the .env.local file
 
 Create a file in the **root** directory of your project called _.env.local_.
 
