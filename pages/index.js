@@ -27,8 +27,24 @@ function Home() {
       <Head>
         <title>TikTokFashion</title>
       </Head>
-      <main className='w-screen h-screen-sm'>
-        <section className='w-full flex justify-between p-20 text-4xl text-white '>
+      <main className='relative w-screen h-screen-sm'>
+        {
+          // Hey Felix, I've put a placeholder video here that you can use with the proper src once received from the client
+          // I've also added a commented out placeholder image in case you want to use that instead
+        }
+        <video
+          src='/videos/placeholder.mp4'
+          autoPlay
+          muted
+          loop
+          className='absolute left-0 top-0 w-screen h-screen-sm object-cover'
+        />
+        {/* <img
+          src='/images/placeholder.jpg'
+          alt='Background'
+          className='absolute left-0 top-0 w-screen h-screen-sm object-cover'
+        /> */}
+        <section className='relative w-full flex justify-between p-20 text-4xl text-white '>
           <h2 className='font-semibold'>#TikTokFashion</h2>
           <h3 className='text-end'>
             competition powered by
