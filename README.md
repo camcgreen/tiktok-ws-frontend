@@ -39,6 +39,6 @@ Create a shortcut to this script on the desktop so that non-technical staff can 
 
 Double click the shortcut you have created on the desktop to run the Next server.
 
-You can now access the home page of the app on http://localhost:3001.
+You can now access the home page of the app on http://localhost:3000.
 
-You can access the input page of the app from the Surface Pro on http://${LOCAL_NETWORK_IP}:3001.
+You can access the input page of the app from the Surface Pro on http://${LOCAL_NETWORK_IP}:3000.
