@@ -1,40 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Set Up
 
-## Getting Started
+## Download the zip from GitHub
 
-First, run the development server:
+Download the ZIP of the project from this [repository](https://github.com/camcgreen/tiktok-ws-frontend).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Ensure Node and NPM are installed
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The server runs on Node. Download the most recent LTS version [here](https://nodejs.org/en).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Once installed, run the following commands in your terminal to verify:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+    node -v
+    npm -v
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Install the dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Open the terminal and cd to where you have unzipped the project. Run the following command in your terminal:
 
-## Learn More
+    npm install
 
-To learn more about Next.js, take a look at the following resources:
+## Create the .env file
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a file in the **root** directory of your project called _.env.local_.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+In this file, add the following:
 
-## Deploy on Vercel
+    NEXT_PUBLIC_WS_URL=ws://${LOCAL_NETWORK_IP}:3001
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Edit the batch script
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Locate the batch script in the root directory of the project: _setup.bat_.
+
+Right click the file and select 'Edit'. Replace the path in the script with the path to the project folder on this computer and then save the amended file.
+
+Create a shortcut to this script on the desktop so that non-technical staff can run the app.
+
+## Run the local Next server
+
+Double click the shortcut you have created on the desktop to run the Next server.
+
+You can now access the home page of the app on http://localhost:3001.
+
+You can access the input page of the app from the Surface Pro on http://${LOCAL_NETWORK_IP}:3001.
