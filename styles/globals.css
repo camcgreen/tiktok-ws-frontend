@@ -55,3 +55,29 @@
 body {
   background-color: rgb(107 114 128);
 }
+
+@keyframes move {
+  0% {
+      transform: translate(25%, 100px);
+  }
+  25% {
+      transform: translate(75%, -100px);
+      /* transform: translate(calc(50% + 100px)); */
+  }
+  50% {
+    transform: translate(25%, -100px);
+      /* transform: translateX(calc(50% + 100px)); */
+  }
+  75% {
+
+    transform: translate(75%, 100px);
+  }
+  100% {
+    transform: translate(25%, 100px);
+      /* transform: translateX(50%); */
+  }
+}
+
+#animate {
+  animation: move 5s infinite;
+}
