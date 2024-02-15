@@ -40,7 +40,7 @@ function Home() {
           className="absolute left-0 top-0 w-screen h-screen-sm object-cover"
         /> */}
         <img
-          src="/spiral.png"
+          src="/Asset 2spiral.png"
           alt="Background"
           className="absolute left-0 top-0 w-screen h-screen-sm object-cover"
         />
